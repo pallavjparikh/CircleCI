@@ -1,0 +1,10 @@
+version: 2.1
+jobs:
+  compile:
+   docker:
+      - image: ubuntu:18.04
+   steps:
+      - run:
+          command: |
+           apt-get update -y
+           apt-get upgrade -y
